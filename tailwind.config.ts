@@ -61,7 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Pop Art Colors
+				'pop-orange': 'hsl(var(--pop-orange))',
+				'pop-pink': 'hsl(var(--pop-pink))',
+				'pop-yellow': 'hsl(var(--pop-yellow))',
+				'pop-blue': 'hsl(var(--pop-blue))',
+				'pop-purple': 'hsl(var(--pop-purple))',
+				'pop-lime': 'hsl(var(--pop-lime))',
+				'pop-red': 'hsl(var(--pop-red))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'bounce': {
+					'0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+					'40%': { transform: 'translateY(-10px)' },
+					'60%': { transform: 'translateY(-5px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce': 'bounce 0.6s ease-in-out'
+			},
+			fontFamily: {
+				'fredoka': ['Fredoka', 'cursive'],
+				'kalam': ['Kalam', 'cursive'],
 			}
 		}
 	},
